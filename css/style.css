@@ -1,0 +1,223 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: #0f1112;
+    background-image: url(../img/1660439153_40-kartinkin-net-p-anime-oboi-cherno-belie-krasivo-47.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+a:focus, a:active{outline: none}
+
+.container {
+    max-width: 1790px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container_main {
+    max-width: 1490px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.header {
+    padding-top: 64px;
+    margin-bottom: 100px;
+}
+
+.logo {
+    color: aliceblue;
+}
+
+.logo:hover {
+    color: #9d91a1;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li+li {
+    margin-left: 75px;
+}
+
+nav a {
+    transition: color 0.2s ease;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a:hover {
+    color: #9d91a1;
+}
+
+.account {
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 0.2s ease;
+}
+
+.account:hover {
+    color: #9d91a1;
+}
+
+.nav_button {
+    display: none;
+    padding: 0;
+    height: 25px;
+    border: none;
+    background: none;
+    position: relative;
+    z-index: 9;
+}
+
+.nav_button_icon {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    width: 42px;
+    height: 4px;
+    border: none;
+}
+
+.nav_button_icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 42px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.nav_button_icon::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: "";
+    display: block;
+    width: 42px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.mobile_nav {
+    padding: 70px 70px 50px 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background-image: url(../img/hate_sidebar.jpg);
+    opacity: 0.9;
+}
+
+.mobile_nav .nav,
+.mobile_nav .account {
+    display: block;
+}
+
+.mobile_nav .nav ul {
+    flex-direction: column;
+}
+
+.mobile_nav .nav ul li {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: 
+    "";
+    justify-content: center;
+    grid-gap: 10px;
+    margin-bottom: 240px;
+}
+
+
+
+
+
+
+.grid_card {
+    border: #d1cfd1 solid 1px;
+    border-radius: 5px;
+    line-height: 100px;
+    color: #ebebeb;
+    background-color: #19161a;
+    height: 100px;
+    text-align: center;
+    
+}
+
+
+
+
+
+.article {
+    display: flex;
+    justify-content: space-between;
+}
+.article_text {
+    margin-right: 115px;
+    padding-left: 150px;
+}
+.article_people {
+    color: #111212;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+.article_hates {
+    line-height: 25px;
+    font-family: cursive;
+    color: #111212;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+.article_link_picture {
+    font-family: cursive;
+    color: #111212;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
