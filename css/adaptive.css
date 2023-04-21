@@ -1,0 +1,29 @@
+.atticle {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.nav, .account {
+		display: none;
+	}
+
+	.nav_button {
+		display: block;
+	}
+
+	.mobile_nav_active {
+		display: flex;
+	}
+}
+
+@media (max-width: 410px) {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 100%;
+		justify-content: center;
+		grid-gap: 10px;
+		margin-bottom: 240px;
+	}
+	
+}
